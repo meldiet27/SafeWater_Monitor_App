@@ -5,16 +5,16 @@
 #include <ThingSpeak.h>
 
 // === WiFi Config ===
-const char SSID[] = "Melanie";           // Replace with your WiFi SSID
-const char PASS[] = "SerialKilla";       // Replace with your WiFi password
+const char SSID[] = "INSERT_WIFI_USER";           // Replace with your WiFi SSID
+const char PASS[] = "INSERT_WIFI_PASS";       // Replace with your WiFi password
 WiFiConnectionHandler ArduinoIoTPreferredConnection(SSID, PASS);
 
 VernierLib Vernier;
 
 // === ThingSpeak Config ===
 WiFiClient client;
-unsigned long channelNumber = 2877004;
-const char *writeAPIKey = "3VI96UKBSDR2T4BC";  // Replace with your ThingSpeak Write API key
+unsigned long channelNumber = INSERT_CHANNEL_ID;
+const char *writeAPIKey = "INSERT_WRITE_API_KEY";  // Replace with your ThingSpeak Write API key
 
 // === Vernier Sensor
 Vernier.autoID();
@@ -90,3 +90,4 @@ void loop() {
     lastUpload = millis();
   }
 }
+
