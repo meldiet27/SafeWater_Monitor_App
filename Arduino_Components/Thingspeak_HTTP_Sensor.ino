@@ -5,8 +5,8 @@
 #include <math.h>
 
 
-char ssid[] = "Melanie";         // your network SSID (name)
-char pass[] = "SerialKilla";     // your network password
+char ssid[] = "INSERT_WIFI_NAME";         // your network SSID (name)
+char pass[] = "INSERT_WIFI_PASS";     // your network password
 
 int keyIndex = 0;                  // your network key Index number (needed only for WEP)
 
@@ -86,3 +86,4 @@ void loop() {
     lastUploadTime = millis();
   }
 }
+
