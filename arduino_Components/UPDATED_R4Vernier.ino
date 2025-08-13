@@ -3,15 +3,15 @@
 #include <ThingSpeak.h>
 #include <VernierLib.h>
 
-const char* ssid = "Melanie";
-const char* password = "SerialKilla";
+const char* ssid = "INSERT_WIFI_USER";
+const char* password = "INSERT_WIFI_PASS";
 
 WiFiServer server(80);
 WiFiClient client;
 VernierLib Vernier;
 
-unsigned long myChannelNumber = 2877004;
-const char* myWriteAPIKey = "3VI96UKBSDR2T4BC";
+unsigned long myChannelNumber = INSERT_CHANNEL_ID;
+const char* myWriteAPIKey = "INSERT_WRITE_API_KEY";
 
 bool isMeasuring = false;
 unsigned long lastUpload = 0;
@@ -102,3 +102,4 @@ void loop() {
     lastUpload = millis();
   }
 }
+
