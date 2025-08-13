@@ -12,11 +12,11 @@ import matplotlib.animation as animation
 from tkinterweb import HtmlFrame
 
 # Arduino HTTP Configuration
-ARDUINO_IP = "172.20.10.3"
+ARDUINO_IP = "INSERT_ARDUINO_IP"
 
 # ThingSpeak Configuration
-channel_id = "2877004"
-read_api_key = "FYAOIME7FTAG1855"
+channel_id = "INSERT_CHANNEL_ID"
+read_api_key = "INSERT_READ_API_KEY"
 
 is_measuring = False
 
@@ -41,7 +41,7 @@ def stop_measurement():
     send_command("/stop")
 
 def open_thingspeak_chart():
-    webbrowser.open("https://thingspeak.com/channels/2877004/charts/1")
+    webbrowser.open("INSERT_THINGSPEAK_WEB_ADDRESS")
 
 def update_dashboard_alerts():
     alert_box.configure(state="normal")
