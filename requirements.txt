@@ -1,4 +1,6 @@
-tkinterweb
-Pillow
-requests
+pyserial
 matplotlib
+tkinter
+requests
+Pillow
+
