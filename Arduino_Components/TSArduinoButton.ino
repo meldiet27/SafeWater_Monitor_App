@@ -2,11 +2,11 @@
 #include <ThingSpeak.h>
 #include "VernierLib.h"
 
-char ssid[] = "Melanie";        
-char pass[] = "SerialKilla";     
+char ssid[] = "INSERT_WIFI_USER";        
+char pass[] = "INSERT_WIFI_PASS";     
 
-unsigned long myChannelNumber = 2877004;
-const char * myWriteAPIKey = "3VI96UKBSDR2T4BC";
+unsigned long myChannelNumber = INSERT_CHANNEL_ID;
+const char * myWriteAPIKey = "INSERT_WRITE_API_KEY";
 
 WiFiClient client;
 VernierLib Vernier;
@@ -57,3 +57,4 @@ void loop() {
     delay(20000);  // wait 20 seconds between uploads
   }
 }
+
