@@ -1,0 +1,4 @@
+tkinterweb
+Pillow
+requests
+matplotlib
